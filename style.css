@@ -1,0 +1,366 @@
+/*body margin으로 깔끔하게 보이기 -> 기본 글은 블랙, 기본 배경은 하얀색 -> 기본 폰트 사이즈는 16*/
+body {
+  margin: 0;
+  background-color: #f7fafc;
+  color: #243240;
+  font-family: "Malgun Gothic", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+/*이미지는 꽉 채우기*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*본문 글 좌우 여백 설정(전체)*/
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
+/*헤더 설정*/
+.site-header {
+  background: linear-gradient(120deg, #1b4965, #2d6a8b);
+  border-bottom: 4px solid #f0a35e;
+  box-shadow: 0 3px 12px rgba(27, 73, 101, 0.2);
+}
+/*헤더 설정(좌우 여백)*/
+.header-inner {
+  padding: 20px 0;
+}
+
+.logo {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -0.4px;
+}
+/*헤더 위 설정*/
+nav {
+  margin-top: 12px;
+}
+/*헤더에서 링크 설정*/
+nav a {
+  color: #eaf5f8;
+  margin-right: 18px;
+  padding: 5px 8px;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+/*헤더에서 a링크에 마우스 호버 설정*/
+nav a:hover,
+nav a.active {
+  color: #17374d;
+  background-color: #fff4e8;
+  text-decoration: none;
+}
+
+h1, h2 {
+  color: #1b4965;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+  letter-spacing: -1.2px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.hero {
+  padding: 55px 0 35px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.hero > div,
+.hero > img {
+  width: 50%;
+}
+
+.page-intro {
+  padding: 50px 0 20px;
+}
+
+.eyebrow {
+  color: #c96a21;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.lead {
+  color: #2f6684;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.inline-link,
+.project-link {
+  color: #1f6e95;
+  font-weight: bold;
+}
+
+.inline-link:hover,
+.project-link:hover {
+  color: #c96a21;
+}
+
+.profile-image,
+.content-image {
+  width: 100%;
+  margin-top: 18px;
+  border: 3px solid white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(27, 73, 101, 0.16);
+}
+
+.profile-image {
+  max-height: 410px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.project-preview {
+  padding: 10px;
+  background-color: #f8fcfd;
+  border: 1px solid #d7e7ed;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #356789;
+  font-weight: bold;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.hobby-card {
+  padding: 14px;
+  background-color: #f8fcfd;
+  border: 1px solid #d7e7ed;
+  border-radius: 14px;
+}
+
+.hobby-card img {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.hobby-card h3 {
+  margin: 12px 0 4px;
+  color: #1b4965;
+  font-size: 18px;
+}
+
+.hobby-card p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.youtube-feature {
+  background-color: #fffaf5;
+}
+
+.youtube-feature .content-image {
+  margin-top: 0;
+}
+
+/* 사진과 글을 나란히 배치 */
+.two-column {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.two-column > * {
+  width: 50%;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.section-card {
+  margin: 35px 0;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #d7e7ed;
+  border-radius: 16px;
+  box-shadow: 0 7px 18px rgba(44, 94, 119, 0.08);
+}
+
+/* id selector 예시 */
+#keywords {
+  border-left: 6px solid #ed9b52;
+}
+
+.tag-list {
+  margin: 15px 0;
+}
+
+.tag {
+  display: inline-block;
+  margin: 4px;
+  padding: 5px 12px;
+  background-color: #e3f2f6;
+  color: #276281;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section-space {
+  margin: 55px 0;
+}
+
+.cat-section {
+  margin-top: 55px;
+}
+
+.hover-guide {
+  color: #666;
+  font-size: 14px;
+}
+
+/* 사진에 마우스를 올리면 설명이 보이는 갤러리 */
+.cat-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.flip-card {
+  position: relative;
+  height: 180px;
+  perspective: 800px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 14px;
+  backface-visibility: hidden;
+  box-shadow: 0 5px 14px rgba(27, 73, 101, 0.18);
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+.flip-front img,
+.flip-back img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-card:hover .flip-inner,
+.flip-card:focus .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.interest-list li {
+  margin-bottom: 10px;
+}
+
+.planet-art {
+  width: 100%;
+  max-width: 520px;
+  margin: 20px auto 0;
+  display: block;
+}
+
+footer {
+  margin-top: 60px;
+  padding: 24px 0;
+  background-color: #17374d;
+  color: white;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .hero,
+  .two-column,
+  .reverse {
+    flex-direction: column;
+  }
+
+  .hero > div,
+  .hero > img,
+  .two-column > * {
+    width: 100%;
+  }
+
+  .cat-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flip-card,
+  .flip-inner {
+    height: 160px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-card img {
+    height: 190px;
+  }
+}
